@@ -1,0 +1,420 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8eeee;
+}
+
+
+/* Header */
+
+header {
+    background-color: #8e4a70;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/*Navigation */
+
+nav {
+    background-color: #2b151f;
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+nav ul li{
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 5px;
+    display: block;
+}
+nav ul li a:hover {
+    color: #f4a6c1;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #e8a4c1;
+}
+
+
+/* Main content */
+
+main {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h1,
+section h2,
+section h3 {
+    color: #8e4a70;
+    margin-bottom: 15px;
+}
+
+section h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+section h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+section h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+section p {
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
+
+
+/*About us */
+
+.about {
+    display: block;
+}
+
+
+/* Products*/
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.products > h1,
+.products > p {
+    grid-column: 1 / -1;
+}
+
+.product-card {
+    background-color: #fff7fa;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ead3dd;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+.product-card h3 {
+    color: #8e4a70;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    line-height: 1.6;
+}
+
+
+/* Links/Buttons*/
+
+a {
+    color: #8e4a70;
+}
+
+.button {
+    display: inline-block;
+    background-color: #8e4a70;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #6f3655;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #2b151f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   TABLETS / DESKTOP
+   ========================= */
+
+@media (min-width: 768px) {
+
+    .about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .about h1,
+    .about p {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   MOBILE
+   ========================= */
+
+@media (max-width: 767px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about {
+        display: block;
+    }
+
+    section h1 {
+        font-size: 26px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    section h3 {
+        font-size: 20px;
+    }
+}
+/* Enquiry Page */
+.enquiry {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.enquiry h2 {
+    color: #5a3d4f;
+    margin-bottom: 15px;
+}
+
+.enquiry p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Enquiry Form */
+.enquiry form {
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiry label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #5a3d4f;
+}
+
+.enquiry input,
+.enquiry select,
+.enquiry textarea {
+    padding: 12px;
+    border: 1px solid #d8c5cf;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.enquiry textarea {
+    resize: vertical;
+}
+
+.enquiry input:focus,
+.enquiry select:focus,
+.enquiry textarea:focus {
+    outline: none;
+    border-color: #8e4a70;
+}
+
+/* Submit Button */
+.enquiry button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #8e4a70;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.enquiry button:hover {
+    background-color: #6f3555;
+}
+
+/* Responsive Enquiry Page */
+@media (max-width: 767px) {
+    .enquiry {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .enquiry input,
+    .enquiry select,
+    .enquiry textarea {
+        font-size: 14px;
+    }
+}
+/* Contact Page */
+.contact {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact h2 {
+    color: #5a3d4f;
+    margin-bottom: 15px;
+}
+
+.contact > p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    background-color: #faf5f8;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e3d2dc;
+}
+
+.contact-card h3 {
+    color: #8e4a70;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsive Contact Page */
+@media (max-width: 767px) {
+    .contact {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+}

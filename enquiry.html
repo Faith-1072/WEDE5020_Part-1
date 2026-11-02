@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Glamoured - Enquiry</title>
+    <title>Wig Enquiries | Contact Glamoured South Africa</title>
+
+<meta name="description" content="Have questions about Glamoured wigs or hair products? Send us an enquiry and let us help you find your perfect style.">
+
+<meta name="keywords" content="wig enquiries, wig information South Africa, Glamoured contact, hair product enquiries">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,8 +38,9 @@
             Complete the form below and we will get back to you.
         </p>
 
-        <form>
-
+            <form id="enquiryForm" 
+                  action="https://formsubmit.co/ajax/faithmabje@icloud.com"
+                  method="POST">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -55,7 +62,7 @@
             <textarea id="message" name="message" rows="5"></textarea>
 
             <button type="submit">Submit Enquiry</button>
-
+            <p id="enquiryFeedback" role="status"></p>
         </form>
     </section>
 

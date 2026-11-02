@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Glamoured - Products</title>
+   <title>Shop Wigs & Hair Products | Glamoured South Africa</title>
+
+<meta name="description" content="Explore Glamoured's wig collection, including straight wigs, curly wigs and body wave styles. Discover your next beautiful look with nationwide delivery.">
+
+<meta name="keywords" content="buy wigs South Africa, straight wigs, curly wigs, body wave wigs, hair products">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,7 +30,8 @@
 
 <main>
 
-    <section class="products">
+    <section class="products-section">
+
         <h1>Our Products</h1>
 
         <p>
@@ -32,28 +39,53 @@
             feel confident, beautiful and empowered.
         </p>
 
-        <div class="product-card">
-            <h3>Straight Wigs</h3>
-            <p>Shop sleek and elegant straight wigs in a variety of lengths and styles.</p>
+        <div class="product-controls">
+
+            <input
+                type="search"
+                id="productSearch"
+                placeholder="Search products..."
+                aria-label="Search products"
+            >
+
+            <select id="categoryFilter" aria-label="Filter products">
+                <option value="all">All Categories</option>
+                <option value="straight">Straight Wigs</option>
+                <option value="curly">Curly Wigs</option>
+                <option value="body-wave">Body Wave Wigs</option>
+                <option value="care">Hair Care</option>
+            </select>
+
         </div>
 
-        <div class="product-card">
-            <h3>Curly Wigs</h3>
-            <p>Discover beautiful curly wigs designed to add volume, texture and confidence.</p>
-        </div>
+        <div id="productGrid" class="product-grid"></div>
+<section class="gallery-section">
+    <h2>Our Wig Gallery</h2>
+    <p>Explore our collection of beautiful styles.</p>
 
-        <div class="product-card">
-            <h3>Hair Care Tips</h3>
-            <p>Simple tips for keeping your hair clean, strong, moisturized and healthy.</p>
-        </div>
+    <div class="image-gallery">
+        <img src="images/wig1.jpg" alt="Straight wig"
+             data-lightbox>
+        <img src="images/wig2.jpg" alt="Curly wig"
+             data-lightbox>
+        <img src="images/wig3.jpg" alt="Body wave wig"
+             data-lightbox>
+    </div>
+</section>
 
+<div id="lightbox">
+    <span id="closeLightbox">&times;</span>
+    <img id="lightboxImage" src="" alt="Enlarged wig image">
+</div>
     </section>
 
 </main>
 
-</body>
 <footer>
     <p>&copy; 2026 Glamoured. All rights reserved.</p>
 </footer>
-<script src="scripts.js"></script>
+
+<script src="script.js" defer></script>
+
+</body>
 </html>

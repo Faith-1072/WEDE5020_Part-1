@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About Glamoured</title> 
-    <meta name="description" content="Learn more about Glamoured, an online wig store offering stylish, quality wigs designed to help women feel confident and beautiful."> 
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <link rel="stylesheet" href="style.css">
+   <title>About Glamoured | Our Wig & Beauty Collection</title>
+
+<meta name="description" content="Learn more about Glamoured, our passion for beauty and confidence, and our nationwide wig delivery across South Africa.">
+
+<meta name="keywords" content="about Glamoured, wig store South Africa, beauty, wigs, hair products">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -52,7 +60,43 @@
         <h2>Why Choose Glamoured?</h2><!-- comment -->
         <p>
     </section>
+    <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <button class="accordion-button" aria-expanded="false">
+            Do you deliver throughout South Africa?
+        </button>
+        <div class="faq-answer" hidden>
+            <p>Yes! Glamoured offers delivery throughout South Africa.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="accordion-button" aria-expanded="false">
+            How do I enquire about a wig?
+        </button>
+        <div class="faq-answer" hidden>
+            <p>Visit our Enquiry page and complete the enquiry form.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="accordion-button" aria-expanded="false">
+            How do I contact Glamoured?
+        </button>
+        <div class="faq-answer" hidden>
+            <p>Visit our Contact page to send us a message.</p>
+        </div>
+    </div>
+</section>
+    <section class="delivery-section">
+    <h2>Our Nationwide Delivery Coverage</h2>
+    <p>Glamoured delivers to customers across all nine provinces of South Africa.</p>
+
+    <div id="deliveryMap"></div>
+</section>
 </main>
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer ></script>
 </body>
 </html>
